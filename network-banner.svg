@@ -33,24 +33,19 @@
         0%, 100% { transform: translate(0, 0); }
         50% { transform: translate(-12px, -20px); }
       }
-      @keyframes fadeLines {
-        0%, 100% { opacity: 0.3; }
-        50% { opacity: 0.45; }
+      @keyframes float9 {
+        0%, 100% { transform: translate(0, 0); }
+        50% { transform: translate(25px, 10px); }
+      }
+      @keyframes float10 {
+        0%, 100% { transform: translate(0, 0); }
+        50% { transform: translate(-10px, 25px); }
       }
       
-      .particle {
-        animation-duration: 12s;
+      .network-group {
+        animation-duration: 15s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
-      }
-      
-      .connection-lines {
-        animation: fadeLines 6s ease-in-out infinite;
-      }
-      
-      .connection-lines line {
-        stroke: rgba(100, 180, 255, 0.4);
-        stroke-width: 1;
       }
     </style>
   </defs>
@@ -58,165 +53,196 @@
   <!-- Background -->
   <rect width="1200" height="300" fill="#0a1628"/>
   
-  <!-- Dense Connection Lines for Plexus Effect -->
-  <g class="connection-lines">
-    <!-- Horizontal connections -->
-    <line x1="50" y1="50" x2="130" y2="60"/><line x1="130" y1="60" x2="210" y2="55"/>
-    <line x1="210" y1="55" x2="290" y2="65"/><line x1="290" y1="65" x2="370" y2="50"/>
-    <line x1="370" y1="50" x2="450" y2="70"/><line x1="450" y1="70" x2="530" y2="55"/>
-    <line x1="530" y1="55" x2="610" y2="60"/><line x1="610" y1="60" x2="690" y2="50"/>
-    <line x1="690" y1="50" x2="770" y2="65"/><line x1="770" y1="65" x2="850" y2="55"/>
-    <line x1="850" y1="55" x2="930" y2="60"/><line x1="930" y1="60" x2="1010" y2="50"/>
-    <line x1="1010" y1="50" x2="1090" y2="70"/><line x1="1090" y1="70" x2="1150" y2="60"/>
-    
-    <line x1="70" y1="110" x2="150" y2="120"/><line x1="150" y1="120" x2="230" y2="115"/>
-    <line x1="230" y1="115" x2="310" y2="125"/><line x1="310" y1="125" x2="390" y2="110"/>
-    <line x1="390" y1="110" x2="470" y2="130"/><line x1="470" y1="130" x2="550" y2="115"/>
-    <line x1="550" y1="115" x2="630" y2="120"/><line x1="630" y1="120" x2="710" y2="110"/>
-    <line x1="710" y1="110" x2="790" y2="125"/><line x1="790" y1="125" x2="870" y2="115"/>
-    <line x1="870" y1="115" x2="950" y2="120"/><line x1="950" y1="120" x2="1030" y2="110"/>
-    <line x1="1030" y1="110" x2="1110" y2="130"/><line x1="1110" y1="130" x2="1170" y2="120"/>
-    
-    <line x1="60" y1="170" x2="140" y2="180"/><line x1="140" y1="180" x2="220" y2="175"/>
-    <line x1="220" y1="175" x2="300" y2="185"/><line x1="300" y1="185" x2="380" y2="170"/>
-    <line x1="380" y1="170" x2="460" y2="190"/><line x1="460" y1="190" x2="540" y2="175"/>
-    <line x1="540" y1="175" x2="620" y2="180"/><line x1="620" y1="180" x2="700" y2="170"/>
-    <line x1="700" y1="170" x2="780" y2="185"/><line x1="780" y1="185" x2="860" y2="175"/>
-    <line x1="860" y1="175" x2="940" y2="180"/><line x1="940" y1="180" x2="1020" y2="170"/>
-    <line x1="1020" y1="170" x2="1100" y2="190"/><line x1="1100" y1="190" x2="1160" y2="180"/>
-    
-    <line x1="80" y1="230" x2="160" y2="240"/><line x1="160" y1="240" x2="240" y2="235"/>
-    <line x1="240" y1="235" x2="320" y2="245"/><line x1="320" y1="245" x2="400" y2="230"/>
-    <line x1="400" y1="230" x2="480" y2="250"/><line x1="480" y1="250" x2="560" y2="235"/>
-    <line x1="560" y1="235" x2="640" y2="240"/><line x1="640" y1="240" x2="720" y2="230"/>
-    <line x1="720" y1="230" x2="800" y2="245"/><line x1="800" y1="245" x2="880" y2="235"/>
-    <line x1="880" y1="235" x2="960" y2="240"/><line x1="960" y1="240" x2="1040" y2="230"/>
-    <line x1="1040" y1="230" x2="1120" y2="250"/>
-    
-    <!-- Vertical connections -->
-    <line x1="50" y1="50" x2="70" y2="110"/><line x1="70" y1="110" x2="60" y2="170"/>
-    <line x1="60" y1="170" x2="80" y2="230"/><line x1="130" y1="60" x2="150" y2="120"/>
-    <line x1="150" y1="120" x2="140" y2="180"/><line x1="140" y1="180" x2="160" y2="240"/>
-    <line x1="210" y1="55" x2="230" y2="115"/><line x1="230" y1="115" x2="220" y2="175"/>
-    <line x1="220" y1="175" x2="240" y2="235"/><line x1="290" y1="65" x2="310" y2="125"/>
-    <line x1="310" y1="125" x2="300" y2="185"/><line x1="300" y1="185" x2="320" y2="245"/>
-    <line x1="370" y1="50" x2="390" y2="110"/><line x1="390" y1="110" x2="380" y2="170"/>
-    <line x1="380" y1="170" x2="400" y2="230"/><line x1="450" y1="70" x2="470" y2="130"/>
-    <line x1="470" y1="130" x2="460" y2="190"/><line x1="460" y1="190" x2="480" y2="250"/>
-    <line x1="530" y1="55" x2="550" y2="115"/><line x1="550" y1="115" x2="540" y2="175"/>
-    <line x1="540" y1="175" x2="560" y2="235"/><line x1="610" y1="60" x2="630" y2="120"/>
-    <line x1="630" y1="120" x2="620" y2="180"/><line x1="620" y1="180" x2="640" y2="240"/>
-    <line x1="690" y1="50" x2="710" y2="110"/><line x1="710" y1="110" x2="700" y2="170"/>
-    <line x1="700" y1="170" x2="720" y2="230"/><line x1="770" y1="65" x2="790" y2="125"/>
-    <line x1="790" y1="125" x2="780" y2="185"/><line x1="780" y1="185" x2="800" y2="245"/>
-    <line x1="850" y1="55" x2="870" y2="115"/><line x1="870" y1="115" x2="860" y2="175"/>
-    <line x1="860" y1="175" x2="880" y2="235"/><line x1="930" y1="60" x2="950" y2="120"/>
-    <line x1="950" y1="120" x2="940" y2="180"/><line x1="940" y1="180" x2="960" y2="240"/>
-    <line x1="1010" y1="50" x2="1030" y2="110"/><line x1="1030" y1="110" x2="1020" y2="170"/>
-    <line x1="1020" y1="170" x2="1040" y2="230"/><line x1="1090" y1="70" x2="1110" y2="130"/>
-    <line x1="1110" y1="130" x2="1100" y2="190"/><line x1="1100" y1="190" x2="1120" y2="250"/>
-    
-    <!-- Diagonal connections for mesh effect -->
-    <line x1="50" y1="50" x2="150" y2="120"/><line x1="130" y1="60" x2="230" y2="115"/>
-    <line x1="210" y1="55" x2="310" y2="125"/><line x1="290" y1="65" x2="390" y2="110"/>
-    <line x1="370" y1="50" x2="470" y2="130"/><line x1="450" y1="70" x2="550" y2="115"/>
-    <line x1="530" y1="55" x2="630" y2="120"/><line x1="610" y1="60" x2="710" y2="110"/>
-    <line x1="690" y1="50" x2="790" y2="125"/><line x1="770" y1="65" x2="870" y2="115"/>
-    <line x1="850" y1="55" x2="950" y2="120"/><line x1="930" y1="60" x2="1030" y2="110"/>
-    <line x1="1010" y1="50" x2="1110" y2="130"/>
-    
-    <line x1="70" y1="110" x2="140" y2="180"/><line x1="150" y1="120" x2="220" y2="175"/>
-    <line x1="230" y1="115" x2="300" y2="185"/><line x1="310" y1="125" x2="380" y2="170"/>
-    <line x1="390" y1="110" x2="460" y2="190"/><line x1="470" y1="130" x2="540" y2="175"/>
-    <line x1="550" y1="115" x2="620" y2="180"/><line x1="630" y1="120" x2="700" y2="170"/>
-    <line x1="710" y1="110" x2="780" y2="185"/><line x1="790" y1="125" x2="860" y2="175"/>
-    <line x1="870" y1="115" x2="940" y2="180"/><line x1="950" y1="120" x2="1020" y2="170"/>
-    <line x1="1030" y1="110" x2="1100" y2="190"/>
-    
-    <line x1="60" y1="170" x2="160" y2="240"/><line x1="140" y1="180" x2="240" y2="235"/>
-    <line x1="220" y1="175" x2="320" y2="245"/><line x1="300" y1="185" x2="400" y2="230"/>
-    <line x1="380" y1="170" x2="480" y2="250"/><line x1="460" y1="190" x2="560" y2="235"/>
-    <line x1="540" y1="175" x2="640" y2="240"/><line x1="620" y1="180" x2="720" y2="230"/>
-    <line x1="700" y1="170" x2="800" y2="245"/><line x1="780" y1="185" x2="880" y2="235"/>
-    <line x1="860" y1="175" x2="960" y2="240"/><line x1="940" y1="180" x2="1040" y2="230"/>
-    <line x1="1020" y1="170" x2="1120" y2="250"/>
-    
-    <!-- Cross-diagonal connections for more density -->
-    <line x1="150" y1="120" x2="70" y2="110"/><line x1="230" y1="115" x2="150" y2="120"/>
-    <line x1="310" y1="125" x2="230" y2="115"/><line x1="390" y1="110" x2="310" y2="125"/>
-    <line x1="470" y1="130" x2="390" y2="110"/><line x1="550" y1="115" x2="470" y2="130"/>
-    <line x1="630" y1="120" x2="550" y2="115"/><line x1="710" y1="110" x2="630" y2="120"/>
-    <line x1="790" y1="125" x2="710" y2="110"/><line x1="870" y1="115" x2="790" y2="125"/>
-    <line x1="950" y1="120" x2="870" y2="115"/><line x1="1030" y1="110" x2="950" y2="120"/>
+  <!-- Network clusters - each group contains nodes and their lines, moving together -->
+  
+  <!-- Cluster 1 -->
+  <g class="network-group" style="animation-name: float1; animation-delay: 0s;">
+    <line x1="100" y1="60" x2="180" y2="70" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="180" y1="70" x2="140" y2="120" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="140" y1="120" x2="100" y2="60" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <circle cx="100" cy="60" r="4.5" fill="rgba(120, 200, 255, 0.9)"/>
+    <circle cx="180" cy="70" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+    <circle cx="140" cy="120" r="5" fill="rgba(120, 200, 255, 0.95)"/>
   </g>
   
-  <!-- Dense Particle Network -->
-  <g>
-    <!-- Row 1 -->
-    <circle class="particle" cx="50" cy="50" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float1; animation-delay: 0s;"/>
-    <circle class="particle" cx="130" cy="60" r="3.5" fill="rgba(120, 200, 255, 0.8)" style="animation-name: float2; animation-delay: 0.5s;"/>
-    <circle class="particle" cx="210" cy="55" r="4.5" fill="rgba(120, 200, 255, 0.9)" style="animation-name: float3; animation-delay: 1s;"/>
-    <circle class="particle" cx="290" cy="65" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float4; animation-delay: 1.5s;"/>
-    <circle class="particle" cx="370" cy="50" r="3.5" fill="rgba(120, 200, 255, 0.8)" style="animation-name: float5; animation-delay: 2s;"/>
-    <circle class="particle" cx="450" cy="70" r="5" fill="rgba(120, 200, 255, 0.95)" style="animation-name: float6; animation-delay: 2.5s;"/>
-    <circle class="particle" cx="530" cy="55" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float7; animation-delay: 3s;"/>
-    <circle class="particle" cx="610" cy="60" r="4.5" fill="rgba(120, 200, 255, 0.9)" style="animation-name: float8; animation-delay: 3.5s;"/>
-    <circle class="particle" cx="690" cy="50" r="3.5" fill="rgba(120, 200, 255, 0.8)" style="animation-name: float1; animation-delay: 4s;"/>
-    <circle class="particle" cx="770" cy="65" r="5" fill="rgba(120, 200, 255, 0.95)" style="animation-name: float2; animation-delay: 4.5s;"/>
-    <circle class="particle" cx="850" cy="55" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float3; animation-delay: 5s;"/>
-    <circle class="particle" cx="930" cy="60" r="4.5" fill="rgba(120, 200, 255, 0.9)" style="animation-name: float4; animation-delay: 5.5s;"/>
-    <circle class="particle" cx="1010" cy="50" r="3.5" fill="rgba(120, 200, 255, 0.8)" style="animation-name: float5; animation-delay: 6s;"/>
-    <circle class="particle" cx="1090" cy="70" r="5" fill="rgba(120, 200, 255, 0.95)" style="animation-name: float6; animation-delay: 6.5s;"/>
-    <circle class="particle" cx="1150" cy="60" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float7; animation-delay: 7s;"/>
-    
-    <!-- Row 2 -->
-    <circle class="particle" cx="70" cy="110" r="4.5" fill="rgba(120, 200, 255, 0.9)" style="animation-name: float8; animation-delay: 0.3s;"/>
-    <circle class="particle" cx="150" cy="120" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float1; animation-delay: 0.8s;"/>
-    <circle class="particle" cx="230" cy="115" r="3.5" fill="rgba(120, 200, 255, 0.8)" style="animation-name: float2; animation-delay: 1.3s;"/>
-    <circle class="particle" cx="310" cy="125" r="5" fill="rgba(120, 200, 255, 0.95)" style="animation-name: float3; animation-delay: 1.8s;"/>
-    <circle class="particle" cx="390" cy="110" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float4; animation-delay: 2.3s;"/>
-    <circle class="particle" cx="470" cy="130" r="4.5" fill="rgba(120, 200, 255, 0.9)" style="animation-name: float5; animation-delay: 2.8s;"/>
-    <circle class="particle" cx="550" cy="115" r="3.5" fill="rgba(120, 200, 255, 0.8)" style="animation-name: float6; animation-delay: 3.3s;"/>
-    <circle class="particle" cx="630" cy="120" r="5" fill="rgba(120, 200, 255, 0.95)" style="animation-name: float7; animation-delay: 3.8s;"/>
-    <circle class="particle" cx="710" cy="110" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float8; animation-delay: 4.3s;"/>
-    <circle class="particle" cx="790" cy="125" r="4.5" fill="rgba(120, 200, 255, 0.9)" style="animation-name: float1; animation-delay: 4.8s;"/>
-    <circle class="particle" cx="870" cy="115" r="3.5" fill="rgba(120, 200, 255, 0.8)" style="animation-name: float2; animation-delay: 5.3s;"/>
-    <circle class="particle" cx="950" cy="120" r="5" fill="rgba(120, 200, 255, 0.95)" style="animation-name: float3; animation-delay: 5.8s;"/>
-    <circle class="particle" cx="1030" cy="110" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float4; animation-delay: 6.3s;"/>
-    <circle class="particle" cx="1110" cy="130" r="4.5" fill="rgba(120, 200, 255, 0.9)" style="animation-name: float5; animation-delay: 6.8s;"/>
-    <circle class="particle" cx="1170" cy="120" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float6; animation-delay: 7.3s;"/>
-    
-    <!-- Row 3 -->
-    <circle class="particle" cx="60" cy="170" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float7; animation-delay: 0.6s;"/>
-    <circle class="particle" cx="140" cy="180" r="4.5" fill="rgba(120, 200, 255, 0.9)" style="animation-name: float8; animation-delay: 1.1s;"/>
-    <circle class="particle" cx="220" cy="175" r="3.5" fill="rgba(120, 200, 255, 0.8)" style="animation-name: float1; animation-delay: 1.6s;"/>
-    <circle class="particle" cx="300" cy="185" r="5" fill="rgba(120, 200, 255, 0.95)" style="animation-name: float2; animation-delay: 2.1s;"/>
-    <circle class="particle" cx="380" cy="170" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float3; animation-delay: 2.6s;"/>
-    <circle class="particle" cx="460" cy="190" r="4.5" fill="rgba(120, 200, 255, 0.9)" style="animation-name: float4; animation-delay: 3.1s;"/>
-    <circle class="particle" cx="540" cy="175" r="3.5" fill="rgba(120, 200, 255, 0.8)" style="animation-name: float5; animation-delay: 3.6s;"/>
-    <circle class="particle" cx="620" cy="180" r="5" fill="rgba(120, 200, 255, 0.95)" style="animation-name: float6; animation-delay: 4.1s;"/>
-    <circle class="particle" cx="700" cy="170" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float7; animation-delay: 4.6s;"/>
-    <circle class="particle" cx="780" cy="185" r="4.5" fill="rgba(120, 200, 255, 0.9)" style="animation-name: float8; animation-delay: 5.1s;"/>
-    <circle class="particle" cx="860" cy="175" r="3.5" fill="rgba(120, 200, 255, 0.8)" style="animation-name: float1; animation-delay: 5.6s;"/>
-    <circle class="particle" cx="940" cy="180" r="5" fill="rgba(120, 200, 255, 0.95)" style="animation-name: float2; animation-delay: 6.1s;"/>
-    <circle class="particle" cx="1020" cy="170" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float3; animation-delay: 6.6s;"/>
-    <circle class="particle" cx="1100" cy="190" r="4.5" fill="rgba(120, 200, 255, 0.9)" style="animation-name: float4; animation-delay: 7.1s;"/>
-    <circle class="particle" cx="1160" cy="180" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float5; animation-delay: 7.6s;"/>
-    
-    <!-- Row 4 -->
-    <circle class="particle" cx="80" cy="230" r="4.5" fill="rgba(120, 200, 255, 0.9)" style="animation-name: float6; animation-delay: 0.9s;"/>
-    <circle class="particle" cx="160" cy="240" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float7; animation-delay: 1.4s;"/>
-    <circle class="particle" cx="240" cy="235" r="3.5" fill="rgba(120, 200, 255, 0.8)" style="animation-name: float8; animation-delay: 1.9s;"/>
-    <circle class="particle" cx="320" cy="245" r="5" fill="rgba(120, 200, 255, 0.95)" style="animation-name: float1; animation-delay: 2.4s;"/>
-    <circle class="particle" cx="400" cy="230" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float2; animation-delay: 2.9s;"/>
-    <circle class="particle" cx="480" cy="250" r="4.5" fill="rgba(120, 200, 255, 0.9)" style="animation-name: float3; animation-delay: 3.4s;"/>
-    <circle class="particle" cx="560" cy="235" r="3.5" fill="rgba(120, 200, 255, 0.8)" style="animation-name: float4; animation-delay: 3.9s;"/>
-    <circle class="particle" cx="640" cy="240" r="5" fill="rgba(120, 200, 255, 0.95)" style="animation-name: float5; animation-delay: 4.4s;"/>
-    <circle class="particle" cx="720" cy="230" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float6; animation-delay: 4.9s;"/>
-    <circle class="particle" cx="800" cy="245" r="4.5" fill="rgba(120, 200, 255, 0.9)" style="animation-name: float7; animation-delay: 5.4s;"/>
-    <circle class="particle" cx="880" cy="235" r="3.5" fill="rgba(120, 200, 255, 0.8)" style="animation-name: float8; animation-delay: 5.9s;"/>
-    <circle class="particle" cx="960" cy="240" r="5" fill="rgba(120, 200, 255, 0.95)" style="animation-name: float1; animation-delay: 6.4s;"/>
-    <circle class="particle" cx="1040" cy="230" r="4" fill="rgba(120, 200, 255, 0.85)" style="animation-name: float2; animation-delay: 6.9s;"/>
-    <circle class="particle" cx="1120" cy="250" r="4.5" fill="rgba(120, 200, 255, 0.9)" style="animation-name: float3; animation-delay: 7.4s;"/>
+  <!-- Cluster 2 -->
+  <g class="network-group" style="animation-name: float2; animation-delay: 1s;">
+    <line x1="250" y1="80" x2="330" y2="65" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="330" y1="65" x2="290" y2="130" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="290" y1="130" x2="250" y2="80" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="180" y1="70" x2="250" y2="80" stroke="rgba(100, 180, 255, 0.35)" stroke-width="1"/>
+    <circle cx="250" cy="80" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+    <circle cx="330" cy="65" r="4.5" fill="rgba(120, 200, 255, 0.9)"/>
+    <circle cx="290" cy="130" r="4" fill="rgba(120, 200, 255, 0.85)"/>
   </g>
+  
+  <!-- Cluster 3 -->
+  <g class="network-group" style="animation-name: float3; animation-delay: 2s;">
+    <line x1="400" y1="90" x2="480" y2="75" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="480" y1="75" x2="440" y2="140" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="440" y1="140" x2="400" y2="90" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="330" y1="65" x2="400" y2="90" stroke="rgba(100, 180, 255, 0.35)" stroke-width="1"/>
+    <circle cx="400" cy="90" r="5" fill="rgba(120, 200, 255, 0.95)"/>
+    <circle cx="480" cy="75" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+    <circle cx="440" cy="140" r="4.5" fill="rgba(120, 200, 255, 0.9)"/>
+  </g>
+  
+  <!-- Cluster 4 -->
+  <g class="network-group" style="animation-name: float4; animation-delay: 3s;">
+    <line x1="550" y1="70" x2="630" y2="85" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="630" y1="85" x2="590" y2="135" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="590" y1="135" x2="550" y2="70" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="480" y1="75" x2="550" y2="70" stroke="rgba(100, 180, 255, 0.35)" stroke-width="1"/>
+    <circle cx="550" cy="70" r="4.5" fill="rgba(120, 200, 255, 0.9)"/>
+    <circle cx="630" cy="85" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+    <circle cx="590" cy="135" r="5" fill="rgba(120, 200, 255, 0.95)"/>
+  </g>
+  
+  <!-- Cluster 5 -->
+  <g class="network-group" style="animation-name: float5; animation-delay: 4s;">
+    <line x1="700" y1="95" x2="780" y2="80" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="780" y1="80" x2="740" y2="145" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="740" y1="145" x2="700" y2="95" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="630" y1="85" x2="700" y2="95" stroke="rgba(100, 180, 255, 0.35)" stroke-width="1"/>
+    <circle cx="700" cy="95" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+    <circle cx="780" cy="80" r="5" fill="rgba(120, 200, 255, 0.95)"/>
+    <circle cx="740" cy="145" r="4.5" fill="rgba(120, 200, 255, 0.9)"/>
+  </g>
+  
+  <!-- Cluster 6 -->
+  <g class="network-group" style="animation-name: float6; animation-delay: 5s;">
+    <line x1="850" y1="75" x2="930" y2="90" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="930" y1="90" x2="890" y2="140" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="890" y1="140" x2="850" y2="75" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="780" y1="80" x2="850" y2="75" stroke="rgba(100, 180, 255, 0.35)" stroke-width="1"/>
+    <circle cx="850" cy="75" r="4.5" fill="rgba(120, 200, 255, 0.9)"/>
+    <circle cx="930" cy="90" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+    <circle cx="890" cy="140" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+  </g>
+  
+  <!-- Cluster 7 -->
+  <g class="network-group" style="animation-name: float7; animation-delay: 6s;">
+    <line x1="1000" y1="85" x2="1080" y2="70" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="1080" y1="70" x2="1040" y2="135" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="1040" y1="135" x2="1000" y2="85" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="930" y1="90" x2="1000" y2="85" stroke="rgba(100, 180, 255, 0.35)" stroke-width="1"/>
+    <circle cx="1000" cy="85" r="5" fill="rgba(120, 200, 255, 0.95)"/>
+    <circle cx="1080" cy="70" r="4.5" fill="rgba(120, 200, 255, 0.9)"/>
+    <circle cx="1040" cy="135" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+  </g>
+  
+  <!-- Bottom layer clusters -->
+  <!-- Cluster 8 -->
+  <g class="network-group" style="animation-name: float8; animation-delay: 0.5s;">
+    <line x1="120" y1="180" x2="200" y2="195" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="200" y1="195" x2="160" y2="240" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="160" y1="240" x2="120" y2="180" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="140" y1="120" x2="120" y2="180" stroke="rgba(100, 180, 255, 0.35)" stroke-width="1"/>
+    <circle cx="120" cy="180" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+    <circle cx="200" cy="195" r="4.5" fill="rgba(120, 200, 255, 0.9)"/>
+    <circle cx="160" cy="240" r="5" fill="rgba(120, 200, 255, 0.95)"/>
+  </g>
+  
+  <!-- Cluster 9 -->
+  <g class="network-group" style="animation-name: float9; animation-delay: 1.5s;">
+    <line x1="270" y1="200" x2="350" y2="185" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="350" y1="185" x2="310" y2="245" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="310" y1="245" x2="270" y2="200" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="290" y1="130" x2="270" y2="200" stroke="rgba(100, 180, 255, 0.35)" stroke-width="1"/>
+    <circle cx="270" cy="200" r="4.5" fill="rgba(120, 200, 255, 0.9)"/>
+    <circle cx="350" cy="185" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+    <circle cx="310" cy="245" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+  </g>
+  
+  <!-- Cluster 10 -->
+  <g class="network-group" style="animation-name: float10; animation-delay: 2.5s;">
+    <line x1="420" y1="190" x2="500" y2="205" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="500" y1="205" x2="460" y2="250" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="460" y1="250" x2="420" y2="190" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="440" y1="140" x2="420" y2="190" stroke="rgba(100, 180, 255, 0.35)" stroke-width="1"/>
+    <circle cx="420" cy="190" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+    <circle cx="500" cy="205" r="5" fill="rgba(120, 200, 255, 0.95)"/>
+    <circle cx="460" cy="250" r="4.5" fill="rgba(120, 200, 255, 0.9)"/>
+  </g>
+  
+  <!-- Cluster 11 -->
+  <g class="network-group" style="animation-name: float1; animation-delay: 3.5s;">
+    <line x1="570" y1="195" x2="650" y2="210" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="650" y1="210" x2="610" y2="255" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="610" y1="255" x2="570" y2="195" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="590" y1="135" x2="570" y2="195" stroke="rgba(100, 180, 255, 0.35)" stroke-width="1"/>
+    <circle cx="570" cy="195" r="4.5" fill="rgba(120, 200, 255, 0.9)"/>
+    <circle cx="650" cy="210" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+    <circle cx="610" cy="255" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+  </g>
+  
+  <!-- Cluster 12 -->
+  <g class="network-group" style="animation-name: float2; animation-delay: 4.5s;">
+    <line x1="720" y1="200" x2="800" y2="185" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="800" y1="185" x2="760" y2="250" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="760" y1="250" x2="720" y2="200" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="740" y1="145" x2="720" y2="200" stroke="rgba(100, 180, 255, 0.35)" stroke-width="1"/>
+    <circle cx="720" cy="200" r="5" fill="rgba(120, 200, 255, 0.95)"/>
+    <circle cx="800" cy="185" r="4.5" fill="rgba(120, 200, 255, 0.9)"/>
+    <circle cx="760" cy="250" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+  </g>
+  
+  <!-- Cluster 13 -->
+  <g class="network-group" style="animation-name: float3; animation-delay: 5.5s;">
+    <line x1="870" y1="195" x2="950" y2="210" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="950" y1="210" x2="910" y2="255" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="910" y1="255" x2="870" y2="195" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="890" y1="140" x2="870" y2="195" stroke="rgba(100, 180, 255, 0.35)" stroke-width="1"/>
+    <circle cx="870" cy="195" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+    <circle cx="950" cy="210" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+    <circle cx="910" cy="255" r="5" fill="rgba(120, 200, 255, 0.95)"/>
+  </g>
+  
+  <!-- Cluster 14 -->
+  <g class="network-group" style="animation-name: float4; animation-delay: 6.5s;">
+    <line x1="1020" y1="200" x2="1100" y2="190" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="1100" y1="190" x2="1060" y2="250" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="1060" y1="250" x2="1020" y2="200" stroke="rgba(100, 180, 255, 0.45)" stroke-width="1.2"/>
+    <line x1="1040" y1="135" x2="1020" y2="200" stroke="rgba(100, 180, 255, 0.35)" stroke-width="1"/>
+    <circle cx="1020" cy="200" r="4.5" fill="rgba(120, 200, 255, 0.9)"/>
+    <circle cx="1100" cy="190" r="4" fill="rgba(120, 200, 255, 0.85)"/>
+    <circle cx="1060" cy="250" r="4.5" fill="rgba(120, 200, 255, 0.9)"/>
+  </g>
+  
+  <!-- Additional scattered nodes for density -->
+  <g class="network-group" style="animation-name: float5; animation-delay: 7s;">
+    <line x1="60" y1="150" x2="100" y2="60" stroke="rgba(100, 180, 255, 0.3)" stroke-width="0.8"/>
+    <circle cx="60" cy="150" r="3" fill="rgba(120, 200, 255, 0.75)"/>
+  </g>
+  
+  <g class="network-group" style="animation-name: float6; animation-delay: 7.5s;">
+    <line x1="220" y1="145" x2="250" y2="80" stroke="rgba(100, 180, 255, 0.3)" stroke-width="0.8"/>
+    <circle cx="220" cy="145" r="3.5" fill="rgba(120, 200, 255, 0.8)"/>
+  </g>
+  
+  <g class="network-group" style="animation-name: float7; animation-delay: 8s;">
+    <line x1="370" y1="155" x2="400" y2="90" stroke="rgba(100, 180, 255, 0.3)" stroke-width="0.8"/>
+    <circle cx="370" cy="155" r="3" fill="rgba(120, 200, 255, 0.75)"/>
+  </g>
+  
+  <g class="network-group" style="animation-name: float8; animation-delay: 8.5s;">
+    <line x1="520" y1="150" x2="550" y2="70" stroke="rgba(100, 180, 255, 0.3)" stroke-width="0.8"/>
+    <circle cx="520" cy="150" r="3.5" fill="rgba(120, 200, 255, 0.8)"/>
+  </g>
+  
+  <g class="network-group" style="animation-name: float9; animation-delay: 9s;">
+    <line x1="670" y1="155" x2="700" y2="95" stroke="rgba(100, 180, 255, 0.3)" stroke-width="0.8"/>
+    <circle cx="670" cy="155" r="3" fill="rgba(120, 200, 255, 0.75)"/>
+  </g>
+  
+  <g class="network-group" style="animation-name: float10; animation-delay: 9.5s;">
+    <line x1="820" y1="150" x2="850" y2="75" stroke="rgba(100, 180, 255, 0.3)" stroke-width="0.8"/>
+    <circle cx="820" cy="150" r="3.5" fill="rgba(120, 200, 255, 0.8)"/>
+  </g>
+  
+  <g class="network-group" style="animation-name: float1; animation-delay: 10s;">
+    <line x1="970" y1="155" x2="1000" y2="85" stroke="rgba(100, 180, 255, 0.3)" stroke-width="0.8"/>
+    <circle cx="970" cy="155" r="3" fill="rgba(120, 200, 255, 0.75)"/>
+  </g>
+  
 </svg>
