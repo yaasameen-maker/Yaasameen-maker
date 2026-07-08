@@ -34,8 +34,8 @@
         50% { transform: translate(-20px, -35px); }
       }
       @keyframes fadeLines {
-        0%, 100% { opacity: 0.15; }
-        50% { opacity: 0.25; }
+        0%, 100% { opacity: 0.35; }
+        50% { opacity: 0.5; }
       }
       
       .particle {
@@ -71,59 +71,59 @@
   
   <!-- Connection Lines (animated) -->
   <g class="connection-lines">
-    <line x1="100" y1="80" x2="250" y2="120" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
-    <line x1="250" y1="120" x2="400" y2="100" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
-    <line x1="400" y1="100" x2="550" y2="140" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
-    <line x1="550" y1="140" x2="700" y2="110" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
-    <line x1="700" y1="110" x2="850" y2="130" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
-    <line x1="850" y1="130" x2="1000" y2="90" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
-    <line x1="1000" y1="90" x2="1100" y2="120" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
+    <line x1="100" y1="80" x2="250" y2="120" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
+    <line x1="250" y1="120" x2="400" y2="100" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
+    <line x1="400" y1="100" x2="550" y2="140" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
+    <line x1="550" y1="140" x2="700" y2="110" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
+    <line x1="700" y1="110" x2="850" y2="130" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
+    <line x1="850" y1="130" x2="1000" y2="90" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
+    <line x1="1000" y1="90" x2="1100" y2="120" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
     
-    <line x1="150" y1="200" x2="300" y2="220" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
-    <line x1="300" y1="220" x2="450" y2="190" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
-    <line x1="450" y1="190" x2="600" y2="210" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
-    <line x1="600" y1="210" x2="750" y2="200" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
-    <line x1="750" y1="200" x2="900" y2="220" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
-    <line x1="900" y1="220" x2="1050" y2="190" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
+    <line x1="150" y1="200" x2="300" y2="220" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
+    <line x1="300" y1="220" x2="450" y2="190" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
+    <line x1="450" y1="190" x2="600" y2="210" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
+    <line x1="600" y1="210" x2="750" y2="200" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
+    <line x1="750" y1="200" x2="900" y2="220" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
+    <line x1="900" y1="220" x2="1050" y2="190" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
     
-    <line x1="100" y1="80" x2="150" y2="200" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
-    <line x1="250" y1="120" x2="300" y2="220" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
-    <line x1="400" y1="100" x2="450" y2="190" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
-    <line x1="550" y1="140" x2="600" y2="210" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
-    <line x1="700" y1="110" x2="750" y2="200" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
-    <line x1="850" y1="130" x2="900" y2="220" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
-    <line x1="1000" y1="90" x2="1050" y2="190" stroke="rgba(0, 43, 49, 0.15)" stroke-width="0.75"/>
+    <line x1="100" y1="80" x2="150" y2="200" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
+    <line x1="250" y1="120" x2="300" y2="220" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
+    <line x1="400" y1="100" x2="450" y2="190" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
+    <line x1="550" y1="140" x2="600" y2="210" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
+    <line x1="700" y1="110" x2="750" y2="200" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
+    <line x1="850" y1="130" x2="900" y2="220" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
+    <line x1="1000" y1="90" x2="1050" y2="190" stroke="rgba(0, 43, 49, 0.4)" stroke-width="1.5"/>
   </g>
   
   <!-- Particles (animated circles) -->
   <g>
-    <circle class="particle" cx="100" cy="80" r="4" fill="rgba(0, 47, 53, 0.6)"/>
-    <circle class="particle" cx="250" cy="120" r="5" fill="rgba(0, 47, 53, 0.7)"/>
-    <circle class="particle" cx="400" cy="100" r="3.5" fill="rgba(0, 47, 53, 0.5)"/>
-    <circle class="particle" cx="550" cy="140" r="4.5" fill="rgba(0, 47, 53, 0.65)"/>
-    <circle class="particle" cx="700" cy="110" r="4" fill="rgba(0, 47, 53, 0.6)"/>
-    <circle class="particle" cx="850" cy="130" r="5" fill="rgba(0, 47, 53, 0.75)"/>
-    <circle class="particle" cx="1000" cy="90" r="3" fill="rgba(0, 47, 53, 0.55)"/>
-    <circle class="particle" cx="1100" cy="120" r="4.5" fill="rgba(0, 47, 53, 0.7)"/>
+    <circle class="particle" cx="100" cy="80" r="5" fill="rgba(0, 47, 53, 0.85)"/>
+    <circle class="particle" cx="250" cy="120" r="6" fill="rgba(0, 47, 53, 0.9)"/>
+    <circle class="particle" cx="400" cy="100" r="4.5" fill="rgba(0, 47, 53, 0.8)"/>
+    <circle class="particle" cx="550" cy="140" r="5.5" fill="rgba(0, 47, 53, 0.88)"/>
+    <circle class="particle" cx="700" cy="110" r="5" fill="rgba(0, 47, 53, 0.85)"/>
+    <circle class="particle" cx="850" cy="130" r="6" fill="rgba(0, 47, 53, 0.95)"/>
+    <circle class="particle" cx="1000" cy="90" r="4" fill="rgba(0, 47, 53, 0.8)"/>
+    <circle class="particle" cx="1100" cy="120" r="5.5" fill="rgba(0, 47, 53, 0.9)"/>
     
-    <circle class="particle" cx="150" cy="200" r="3.5" fill="rgba(0, 47, 53, 0.6)"/>
-    <circle class="particle" cx="300" cy="220" r="4" fill="rgba(0, 47, 53, 0.65)"/>
-    <circle class="particle" cx="450" cy="190" r="5" fill="rgba(0, 47, 53, 0.7)"/>
-    <circle class="particle" cx="600" cy="210" r="4" fill="rgba(0, 47, 53, 0.6)"/>
-    <circle class="particle" cx="750" cy="200" r="3.5" fill="rgba(0, 47, 53, 0.55)"/>
-    <circle class="particle" cx="900" cy="220" r="4.5" fill="rgba(0, 47, 53, 0.7)"/>
-    <circle class="particle" cx="1050" cy="190" r="4" fill="rgba(0, 47, 53, 0.65)"/>
-    <circle class="particle" cx="200" cy="50" r="3" fill="rgba(0, 47, 53, 0.5)"/>
+    <circle class="particle" cx="150" cy="200" r="4.5" fill="rgba(0, 47, 53, 0.85)"/>
+    <circle class="particle" cx="300" cy="220" r="5" fill="rgba(0, 47, 53, 0.88)"/>
+    <circle class="particle" cx="450" cy="190" r="6" fill="rgba(0, 47, 53, 0.9)"/>
+    <circle class="particle" cx="600" cy="210" r="5" fill="rgba(0, 47, 53, 0.85)"/>
+    <circle class="particle" cx="750" cy="200" r="4.5" fill="rgba(0, 47, 53, 0.8)"/>
+    <circle class="particle" cx="900" cy="220" r="5.5" fill="rgba(0, 47, 53, 0.9)"/>
+    <circle class="particle" cx="1050" cy="190" r="5" fill="rgba(0, 47, 53, 0.88)"/>
+    <circle class="particle" cx="200" cy="50" r="4" fill="rgba(0, 47, 53, 0.8)"/>
   </g>
   
   <!-- Additional scattered particles for density -->
   <g>
-    <circle class="particle" cx="180" cy="150" r="2.5" fill="rgba(0, 47, 53, 0.4)" style="animation-name: float4; animation-delay: 1.2s;"/>
-    <circle class="particle" cx="320" cy="170" r="3" fill="rgba(0, 47, 53, 0.45)" style="animation-name: float1; animation-delay: 2.3s;"/>
-    <circle class="particle" cx="520" cy="60" r="2.5" fill="rgba(0, 47, 53, 0.4)" style="animation-name: float5; animation-delay: 3.1s;"/>
-    <circle class="particle" cx="650" cy="180" r="3" fill="rgba(0, 47, 53, 0.5)" style="animation-name: float3; animation-delay: 1.8s;"/>
-    <circle class="particle" cx="800" cy="70" r="2.5" fill="rgba(0, 47, 53, 0.45)" style="animation-name: float7; animation-delay: 2.7s;"/>
-    <circle class="particle" cx="950" cy="160" r="3" fill="rgba(0, 47, 53, 0.5)" style="animation-name: float2; animation-delay: 3.4s;"/>
-    <circle class="particle" cx="1120" cy="80" r="2.5" fill="rgba(0, 47, 53, 0.4)" style="animation-name: float6; animation-delay: 4.2s;"/>
+    <circle class="particle" cx="180" cy="150" r="3.5" fill="rgba(0, 47, 53, 0.75)" style="animation-name: float4; animation-delay: 1.2s;"/>
+    <circle class="particle" cx="320" cy="170" r="4" fill="rgba(0, 47, 53, 0.8)" style="animation-name: float1; animation-delay: 2.3s;"/>
+    <circle class="particle" cx="520" cy="60" r="3.5" fill="rgba(0, 47, 53, 0.75)" style="animation-name: float5; animation-delay: 3.1s;"/>
+    <circle class="particle" cx="650" cy="180" r="4" fill="rgba(0, 47, 53, 0.85)" style="animation-name: float3; animation-delay: 1.8s;"/>
+    <circle class="particle" cx="800" cy="70" r="3.5" fill="rgba(0, 47, 53, 0.8)" style="animation-name: float7; animation-delay: 2.7s;"/>
+    <circle class="particle" cx="950" cy="160" r="4" fill="rgba(0, 47, 53, 0.85)" style="animation-name: float2; animation-delay: 3.4s;"/>
+    <circle class="particle" cx="1120" cy="80" r="3.5" fill="rgba(0, 47, 53, 0.75)" style="animation-name: float6; animation-delay: 4.2s;"/>
   </g>
 </svg>

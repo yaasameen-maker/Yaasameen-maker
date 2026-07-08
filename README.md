@@ -12,12 +12,12 @@
 
 ### A bit about me
 
-I've worn a lot of hats: closed sales in healthcare and hospitality, founded a self-defense business from scratch, and topped leaderboards as a sales rep. But these days? I'm deep in the code.
+As an **AI-Native Software Engineering Fellow at Pursuit**, I've gone from prospecting clients to shipping full-stack AI products — including a VC relationship intelligence platform for AlleyCorp.
 
-As an **AI-Native Software Engineering Fellow at Pursuit**, I've gone from prospecting clients to shipping full-stack AI products — including a VC relationship intelligence platform for AlleyCorp. Turns out, the same skills that help you understand what a client needs also help you build what a user wants.
+I love the intersection of **people and products**. Whether that's in tech sales, sales development, or product engineering — I'm drawn to roles where understanding users is just as important as building for them.
 
-I love the intersection of **people and product**. I'm looking for roles where I can bring consultative thinking, product fluency, and a builder's mindset — whether that's in tech sales, sales development, or product engineering.
+Before code, I was closing deals in healthcare and hospitality, and I founded a self-defense business from the ground up. These days, I bring that same consultative mindset to building software.
 
-When I'm not coding, you'll find me thinking about how to make tech more human.
+Let's connect if you're working on something at the intersection of **AI, sales, or product**.
 
 ---
